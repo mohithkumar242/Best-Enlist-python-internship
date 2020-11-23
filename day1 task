@@ -1,0 +1,2 @@
+a="thirty days thirty hours"
+print(a[2:])
