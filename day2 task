@@ -1,0 +1,15 @@
+a=b=c=100
+print(a/10)
+print(b*50)
+print(c+60)
+print("\n")
+print("\n")
+x="print"
+y=x.replace('i','u')
+print(y)
+print("\n")
+print("\n")
+a=15
+b=20.20
+print(float(a))
+print(int(b))
