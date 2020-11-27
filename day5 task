@@ -1,0 +1,17 @@
+a=int(input("enter first value"))
+b=int(input("enter second value"))
+def function(x,y):
+	print("Addition of two numbers is",x+y)
+	print("Subtraction of two numbers is",x-y)
+	print("Division of two numbersis",x/y)
+	print("multiplication of two numbers is ",x*y)
+function(a,b)
+
+
+print("\n")
+
+
+def covid(p_name,temp=98):
+	print("patient name is {0} and temperature is {1}".format(p_name,temp))
+
+covid("dilip",98)
