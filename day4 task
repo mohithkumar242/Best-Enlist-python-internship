@@ -1,0 +1,28 @@
+#1
+
+list1 = [1,2,3,4,5]
+print("updating")
+list1.append(6)
+print(list1)
+print("deleting")
+list1.remove(3)
+print(list1)
+print("max value")
+a=max(list1)
+print(a)
+print("min value")
+b=min(list1)
+print(b)
+print("\n")
+
+#2
+
+tuple=("starlink","tesla","falcon","spacex")
+print(tuple[::-1])
+print("\n")
+
+#3
+
+tuple1=("python","java", "javascript","c#")
+mylist=list(tuple1)
+print(mylist)
