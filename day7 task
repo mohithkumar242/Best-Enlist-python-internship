@@ -1,0 +1,33 @@
+import mymodule
+
+print(mymodule.list1)
+
+changed=[x+5 for x in mymodule.list1]
+
+print(changed)
+
+#2
+
+pip install pandas #installing
+
+import pandas   #impoting module
+
+
+#3
+import random
+print(random.randint(1,100))
+print()
+
+
+#4
+
+import sys
+sys.path
+
+print()
+
+
+#5
+pip install numpy #installing python package 
+print()
+pip uninstall numpy #uninstalling python package
