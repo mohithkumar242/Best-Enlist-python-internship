@@ -1,0 +1,45 @@
+#1
+f=lambda x,y :x*y
+
+print(f(10,5))
+
+print()
+print()
+
+
+#2
+from functools import reduce
+
+fib = lambda n: reduce(lambda x,_:x+[x[-1]+x[-2]],range(n-2),[0,1])
+val=int(input("enter number for fibonacci"))
+print(fib(val))
+
+
+print()
+print()
+#3
+numb=[5,6,7,8,9]
+print("Given list is :",numb)
+v=3
+numbers=list(map(lambda number: number*v,numb))
+print(' '.join(map(str,numbers)))
+ 
+
+print()
+print()
+
+
+ #4
+list1=[18,24,27,54,99,37]
+print("Given numbers are:",list1)
+
+t=list(filter(lambda x: (x%9==0),list1))
+print("numbers divisible by 9 are:",t)
+
+print()
+print()
+#5
+myList = [1,2,3,4,5,6,7,8]
+
+z=len(list(filter(lambda x:x%2==0,myList)))
+print("No of even numbers in list are:",z)
