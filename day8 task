@@ -1,0 +1,97 @@
+#1
+
+#1.NameError
+#2.ModuleNotFoundError
+#3.IndexError
+#4.ZeroDivisionError
+#5.ValueError
+
+try:
+    raise NameError('hyperloop')
+except NameError:
+    print("The exception demolished")
+#ModuleNotFoundError
+try:
+    import scipy
+    print("Module found")
+except:
+    print("module not found")
+
+#Indexerror
+List1=[24,53,45,61,78]
+try:
+    print(List1[30])
+except:
+    print("Index Error handled")
+
+#ZeroDivisionError
+try:
+    a=4/0
+    print(a)
+except:
+    print("Can't divide by zero")
+
+#ValueError
+try:
+    x=int(input("Enter the number"))
+
+except:
+    print("It is not a number")
+
+print()
+print()    
+#2
+
+m=int(input("Enter first number"))
+n=int(input("Enter second number"))
+print("Choose the below option")
+print("1.Addition")
+print("2.Subraction")
+print("3.Multiplication")
+print("4.Division")
+ch=int(input("Enter your choice"))
+try:
+    if (ch == 1):
+        c = m + n
+        print("The result is: ",c)
+    elif(ch==2):
+        c=m-n
+        print("The result is: ",c)
+    elif(ch==3):
+        c=m*n
+        print("The result is: ",c)
+    elif(ch==4):
+        c=m/n
+        print("The result is: ",c)
+    else:
+        raise ValueError
+except ValueError:
+        print("Invalid input")
+finally:
+    print("End of program")
+
+print()
+print()
+
+#3
+try:
+    raise NameError("Tesla")
+except NameError:
+    print("The Exception is handled")
+
+
+print()
+print()
+#4
+#when there is no issue of having Error in program no need of try-except block
+
+
+#5
+while True:
+    try:
+        n = input("Please a integer: ")
+        n = int(n)
+        break
+    except ValueError:
+        print("Not valid integer! try again")
+print("successfully entered a integer")
